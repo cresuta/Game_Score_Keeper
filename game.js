@@ -29,6 +29,8 @@ p1Btn.addEventListener('click', () => {
         p1Score++;
         if(p1Score === winningScore) {
            isGameOver = true;
+           p1Display.style.color = '#198754';
+           p2Display.style.color = '#dc3545';
         }
         p1Display.innerText = p1Score;
     }
@@ -40,6 +42,8 @@ p2Btn.addEventListener('click', () => {
         p2Score++;
         if(p2Score === winningScore) {
            isGameOver = true;
+           p2Display.style.color = '#198754';
+           p1Display.style.color = '#dc3545';
         }
         p2Display.innerText = p2Score;
     }
