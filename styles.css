@@ -44,8 +44,20 @@ h5 {
     font-size: 0.9rem;
 }
 
-.buttons {
+#playingTo {
+    border-radius: 10px;
+}
+
+.footer {
     display: flex;
+    justify-content: space-around;
+    width: 300px;
+    height: 2em;
+}
+
+.btn {
+    font-size: 0.9em;
+    align-self: center;
 }
 
 #instructions {
