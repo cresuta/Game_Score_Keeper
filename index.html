@@ -10,19 +10,23 @@
 <body>
     <div class="container">
         <div>
-            <img src="https://images.unsplash.com/photo-1556084123-fe76122cd5d3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1276&q=80" alt="Chess Board With Pieces">
+            <img src="imgs/chess_board.jpg" alt="Chess Board">
+        </div> 
+        <div class="heading">
+            <h5>Game Score Keeper</h5>  
         </div>
-        <h5>Game Score Keeper</h5>
-        <h2>0 to 0</h2>
-        <p>Press buttons below to keep score</p>
-        <label for="playingTo">Playing to
-            <select name="bestOf" id="playingTo">
-                <option value="three">3</option>
-                <option value="five">5</option>
-                <option value="seven">7</option>
-                <option value="nine">9</option>
-            </select>
-        </label>
+        <div class="main">
+            <h2>0 to 0</h2>
+            <label for="playingTo"><b>Playing to</b>
+                <select name="bestOf" id="playingTo">
+                    <option value="three">3</option>
+                    <option value="five">5</option>
+                    <option value="seven">7</option>
+                    <option value="nine">9</option>
+                </select>
+            </label>
+            <p id="instructions">Press buttons below to keep score</p>
+        </div>
         <div class="buttons">
             <button>+1 Player One</button>
             <button>+1 Player Two</button>
