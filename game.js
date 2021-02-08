@@ -15,8 +15,10 @@ function reset () {
     isGameOver = false;
     p1Score = 0;
     p1Display.innerText = p1Score;
+    p1Display.classList.remove('winner','loser');
     p2Score = 0;
     p2Display.innerText = p2Score;
+    p2Display.classList.remove('winner','loser');
 }
 
 playToSelect.addEventListener('change', function () {
@@ -29,8 +31,8 @@ p1Btn.addEventListener('click', () => {
         p1Score++;
         if(p1Score === winningScore) {
            isGameOver = true;
-           p1Display.style.color = '#198754';
-           p2Display.style.color = '#dc3545';
+           p1Display.classList.add('winner');
+           p2Display.classList.add('loser');
         }
         p1Display.innerText = p1Score;
     }
@@ -42,8 +44,8 @@ p2Btn.addEventListener('click', () => {
         p2Score++;
         if(p2Score === winningScore) {
            isGameOver = true;
-           p2Display.style.color = '#198754';
-           p1Display.style.color = '#dc3545';
+           p2Display.classList.add('winner');
+           p1Display.classList.add('loser');
         }
         p2Display.innerText = p2Score;
     }

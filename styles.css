@@ -40,7 +40,6 @@ h5 {
     border-bottom: none;
 }
 
-
 .main label {
     margin-bottom: 8px;
     font-size: 0.9rem;
@@ -48,6 +47,11 @@ h5 {
 
 #playTo {
     border-radius: 10px;
+}
+
+#instructions {
+    font-size: 0.7rem;
+    margin-bottom: 8px;
 }
 
 .footer {
@@ -62,7 +66,10 @@ h5 {
     align-self: center;
 }
 
-#instructions {
-    font-size: 0.7rem;
-    margin-bottom: 8px;
+.winner {
+    color: #198754;
+}
+
+.loser {
+    color: #dc3545;
 }
